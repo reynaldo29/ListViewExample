@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListViewExample.PhoneGrouping">
+    <ListView x:Name="algo" IsGroupingEnabled="True" GroupDisplayBinding="{ Binding Name}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Title}" Detail="{Binding Company}" TextColor="AliceBlue">
+
+                </TextCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>
+</ContentPage>
